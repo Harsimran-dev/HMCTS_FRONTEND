@@ -2,7 +2,7 @@
   <h2 class="mat-headline">Task Manager</h2>
 
   <div class="form mat-elevation-z4">
-    <!-- Material Design Form Fields with Validation -->
+  
     <mat-form-field appearance="fill" class="full-width">
       <mat-label>Title</mat-label>
       <input matInput type="text" placeholder="Title" [(ngModel)]="newTask.title" name="title" required>
@@ -20,11 +20,11 @@
       <mat-error *ngIf="!newTask.dueDateTime">Due Date is required</mat-error>
     </mat-form-field>
 
-    <!-- Submit Button -->
+ 
     <button mat-raised-button color="primary" (click)="createTask()" [disabled]="!newTask.title || !newTask.dueDateTime">Create Task</button>
   </div>
 
-  <!-- Task List -->
+
   <div class="task-list">
     <div *ngFor="let task of tasks" class="task-card mat-elevation-z4">
       <h3>{{ task.title }}</h3>

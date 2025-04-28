@@ -1,28 +1,25 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // Required for Angular Material
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 
-// Angular Material Modules
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
-import { MatDialogModule } from '@angular/material/dialog'; // Import MatDialogModule
-import { MatFormFieldModule } from '@angular/material/form-field'; // Import MatFormFieldModule
-import { MatInputModule } from '@angular/material/input'; // Import MatInputModule
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 import { NgxSignaturePadModule } from "@o.krucheniuk/ngx-signature-pad";
 
 
-// Chart Module
 import { NgChartsModule } from 'ng2-charts';
 import { FormsModule } from '@angular/forms'; 
 
-// Components
 
 import { MatIconModule } from '@angular/material/icon';
 import { MatExpansionModule } from '@angular/material/expansion';
-import { TaskListComponent } from './components/task-list/task-list.component';  // For accordion and expansion panel
+import { TaskListComponent } from './components/task-list/task-list.component';
 
 
 
@@ -34,7 +31,7 @@ import { TaskListComponent } from './components/task-list/task-list.component'; 
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule, // Required for Angular Material
+    BrowserAnimationsModule,
     AppRoutingModule,
     MatButtonModule,
     MatCardModule,
@@ -48,7 +45,7 @@ import { TaskListComponent } from './components/task-list/task-list.component'; 
     HttpClientModule,
     
 
-    MatDialogModule, // Add MatDialogModule here
+    MatDialogModule,
     NgChartsModule
   ],
   providers: [],

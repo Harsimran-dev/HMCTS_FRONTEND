@@ -1,11 +1,9 @@
-/* General Container Styles */
 .container {
   margin: 20px auto;
   max-width: 600px;
   padding: 20px;
 }
 
-/* Form and Inputs */
 .form {
   display: flex;
   flex-direction: column;
@@ -16,7 +14,6 @@
   width: 100%;
 }
 
-/* Task Card Styles */
 .task-list {
   margin-top: 30px;
 }
@@ -43,7 +40,6 @@ p {
   margin-right: 10px;
 }
 
-/* Elevation and Button Styling */
 .mat-raised-button {
   width: 100%;
   margin-top: 10px;

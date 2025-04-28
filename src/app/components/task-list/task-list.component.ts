@@ -35,12 +35,10 @@ export class TaskListComponent implements OnInit {
       return;
     }
   
-    // You can add more validation checks here as needed (e.g., valid date format)
   
     this.taskService.createTask(this.newTask).subscribe(() => {
-      // Reset the form after successful task creation
       this.newTask = { title: '', description: '', status: 'PENDING', dueDateTime: '' };
-      this.getTasks(); // Refresh task list
+      this.getTasks();
     }, error => {
       alert('Error creating task. Please try again!');
     });
